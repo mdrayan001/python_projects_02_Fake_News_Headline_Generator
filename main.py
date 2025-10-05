@@ -28,22 +28,22 @@ places_or_things = [
      "a plate of samosa",
      "inside parliament",
      "at Ganga ghat",
-     "at gateway of india",
+     "at gateway of india"
 ]
 
 # 3 start the headline generation loop
 while True:
-    subject = random.choice(subject)
+    subjects = random.choice(subjects)
     actions = random.choice(actions)
     places_or_things = random.choice(places_or_things)
     
-    headline = f"BREAKING NEWS: {subject} {actions} {places_or_things}"
+    headline = f"BREAKING NEWS: {subjects} {actions} {places_or_things}"
     
     print("\n" + headline)
     
-    user_input = input("\n Do you want another headline ? (yes/no)").strip()
+    user_input = input("\n Do you want another headline ? (yes/no):").strip()
     if user_input == "no":
         break
     
-    # print the message
-    print("Thanks to using the fake news headline generator. Have a fun day!")
+# print the message
+print("Thanks to using the fake news headline generator. Have a fun day!")
